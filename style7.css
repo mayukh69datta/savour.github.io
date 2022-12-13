@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+
+body {
+    background: url('icons/hj.jpg');
+    background-size: contain;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 95%;
+    max-width: 500px;
+    height: 190px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.tui {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    font-size: 18px;
+    border: 2px solid #222;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #fff;
+    margin-top: 16rem;
+    margin-left: 12rem;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 33%;
+    border: 3rem solid white;
+    border-radius: 5.0rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list {
+    width: 104.7rem;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    font-size: 2rem;
+    list-style: none;
+    padding: 2.6rem 3.0rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.rightnav {
+    margin-left: 19.8rem;
+    /* width: 30%; */
+    /* background-color:black */
+    text-align: right;
+    padding: 0 2.3rem;
+}
+
+#search {
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    border: 0.2rem solid grey;
+    border-radius: 0.9rem;
+}
+
+.background {
+    background: url('icons/food12.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main {
+    background-image: url('icons/food.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6.2rem;
+    height: 29.8rem;
+}
+
+.box-main h1 {
+    padding-left: 26.8rem;
+    font-size: 5.6rem;
+    color: white;
+}
+
+.box-main h2 {
+    padding-left: 36.2rem;
+    font-size: 4.1rem;
+    color: white;
+
+}
+
+.box-main h3 {
+    padding-left: 13.8rem;
+    font-size: 5.1rem;
+    color: white;
+}
+
+.flex {
+    margin-top: 11.0rem;
+    background-image: url('icons/food2.jpeg');
+    height: 123.2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.number {
+    width: 90px;
+    height: 60px;
+    font-size: 30px;
+    background-color: green;
+    color: honeydew;
+}
+
+.count {
+    font-size: 3rem;
+}
+
+.number:hover {
+    background-color: greenyellow;
+    color: grey;
+    cursor: pointer;
+}
+
+.cow {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: -3rem;
+}
+
+.goat {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: -3rem;
+}
+
+.thumbnail img {
+    height: 39.5rem;
+    width: fit-content;
+}
+
+.flex h1 {
+    padding-left: 60.0rem;
+    font-size: 4.5rem;
+}
+
+.menu {
+    padding-top: 7.2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 96%;
+}
+
+.l {
+    display: none;
+}
+
+.img1:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.img2:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.img3:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.itemname {
+    font-size: 2.0rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu2 {
+    padding-top: 7.2rem;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    max-height: 25.0rem;
+}
+
+.img4 {
+    width: 45.0rem
+}
+
+.img5 {
+    width: 45.0rem
+}
+
+.img6 {
+    width: 45.0rem
+}
+
+.itemname2 {
+    font-size: 2.0rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img4:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.img5:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.img6:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.more h1 {
+    padding-top: 5.2rem;
+    padding-left: 42.8rem;
+    font-size: 6.1rem;
+    color: white;
+}
+
+.freshly {
+    margin-top: 5.9rem;
+    height: 40.0rem;
+    background: url('icons/food9.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.freshly h1 {
+    font-size: 7.3rem;
+    text-align: center;
+    padding-top: 11.3rem;
+    color: ghostwhite;
+}
+
+.delivery {
+    margin-top: 6.1rem;
+    height: 60.0rem;
+    background: url('icons/food10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.delivery h1 {
+    font-size: 6.9rem;
+    padding-top: 4.4rem;
+    color: black;
+}
+
+.delivery h2 {
+    font-size: 4.1rem;
+    padding-top: 41.4rem;
+    color: honeydew;
+}
+
+.order-now {
+    margin-top: 6.8rem;
+    height: 60.0rem;
+    background: url('icons/food11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.order-now h1 {
+    font-size: 10.1rem;
+    color: darkred;
+}
+
+.order-now h2 {
+    padding-top: 41rem;
+    font-size: 5.3rem;
+    color: black;
+}
+
+.ordering {
+    margin-top: 6.4rem;
+    background: url('icons/food12.jpeg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.9rem;
+}
+
+.ordering h1 {
+    font-size: 7.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 5rem;
+}
+
+.button {
+    display: none;
+}
+
+.fina {
+    width: 16rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.hidden {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-hide {
+    height: 5rem;
+    width: 10rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.v {
+    border: 0.2rem solid black;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    width: 13.7rem;
+    height: 4.7rem;
+    font-size: 3.5rem;
+}
+
+.v:hover {
+    transform: scale(1.5, 1.5);
+}
+
+.fa {
+    padding: 2.0rem;
+    font-size: 3.0rem;
+    width: 5.0rem;
+    text-align: center;
+    text-decoration: none;
+    width: 6rem;
+    height: 2rem;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: darkblue;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: lightblue;
+    color: white;
+}
+
+.fa-instagram {
+    background: palevioletred;
+    color: white;
+}
+
+.fa-youtube {
+    background: red;
+    color: white;
+}
+
+.connect {
+    background: url('icons/tech.jpg');
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.connect h1 {
+    padding-left: 29.8rem;
+    color: lawngreen;
+    font-size: 6rem;
+}
+
+.sliding {
+    margin-top: 3.5rem;
+}
+
+.mySlides {
+    height: 50.0rem;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: black;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+.form {
+    margin: 25px auto;
+    background: url("icons/food20.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 4px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-dark {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+.form-input {
+    margin: 14px 0;
+    padding: 5px 13px;
+    width: 80%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+
+.form1 h1 {
+    margin-left: 49rem;
+    font-size: 4rem;
+    color: white;
+}
+
+.po {
+    height: 71rem;
+    background: url("icons/food19.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.new{
+    display: none;
+}
+
+.s {
+    height: 5rem;
+}
+
+.fr {
+    margin-left: 60rem;
+    height: 5rem;
+    width: 27rem;
+}
+
+.fr:hover {
+    cursor: pointer;
+}
+
+.po h1 {
+    font-size: 5rem;
+}
+
+.po h2 {
+    font-size: 3rem;
+    color: red;
+}
+
+.t {
+    margin-top: 2rem;
+}
+
+.content h1 {
+    font-size: 3rem;
+}
+
+.form1 {
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width:998px) {
+    html {
+        font-size: 21%
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 136rem;
+    }
+
+    .menu img {
+        height: 56.8rem;
+        width: 81rem;
+    }
+
+    .img2 {
+        padding-top: 7.9rem;
+        /* padding-bottom: 91rem; */
+    }
+
+    .img3 {
+        padding-top: 7.9rem;
+        padding-bottom: 0.4rem;
+    }
+
+    .itemname {
+        display: none;
+    }
+
+    .itemname2 {
+        display: none;
+    }
+
+    .flex {
+        height: 645.0rem;
+    }
+
+    .flex h1 {
+        padding-left: 20vw;
+        font-size: 8rem;
+    }
+
+    .l {
+        font-size: 2.0rem;
+        display: inline;
+    }
+
+    .menu2 {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menu2 img {
+        height: 56.8rem;
+        width: 81rem;
+    }
+
+    .img4 {
+        /* padding-top: 70.3rem; */
+    }
+
+    .img5 {
+        padding-top: 7.9rem;
+        /* padding-bottom: 91rem; */
+    }
+
+    .img6 {
+        padding-top: 7.9rem;
+    }
+
+    /* .flex h3{
+        padding-top: 84.2rem;
+        padding-left: 17.8rem;
+    } */
+
+    .box-main {
+        margin-top: 30px;
+        height: 57.8rem;
+    }
+
+    .box-main h1 {
+        font-size: 11.0rem;
+        padding-left: 11vw;
+    }
+
+    .box-main h2 {
+        font-size: 10.0rem;
+        padding-left: 26vw;
+    }
+
+    .box-main h3 {
+        font-size: 5rem;
+        padding-left: 16vw;
+        padding-top: 10vw;
+    }
+
+    .more {
+        margin-top: 139.0rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .more h1 {
+        font-size: 7.0rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        height: 77.7rem;
+        flex-direction: column;
+        transition: all 0.8s ease-out;
+    }
+
+    .rightnav {
+        text-align: center;
+        margin-left: 0.8rem;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-list li {
+        font-size: 15px;
+    }
+
+    .h-nav-resp {
+        height: 72px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .button {
+        display: inline;
+        margin-top: 4rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .new {
+        display: flex;
+        justify-content: space-between;
+        width: 78rem;
+        margin-top: 7rem;
+    }
+
+    .goat {
+        display: none;
+    }
+
+    .cow {
+        display: none;
+    }
+
+    .count {
+        font-size: 12rem;
+    }
+
+    .freshly {
+        height: 60rem;
+    }
+
+    .t {
+        margin-top: 5rem;
+    }
+
+    .s {
+        margin-left: -23rem;
+        margin-bottom: 12rem;
+    }
+
+    .fr {
+        height: 12rem;
+    }
+
+    .form1 {
+        margin-top: 7rem;
+    }
+
+    .form1 h1 {
+        margin-left: 16rem;
+        font-size: 6rem;
+    }
+
+    .ordering {
+        margin-top: 10.4rem;
+        height: 42rem;
+    }
+
+    .ordering h1 {
+        padding-bottom: 29rem;
+    }
+
+    .tui {
+        margin-top: 34rem;
+        margin-left: 19rem;
+        font-size: 10px;
+    }
+
+    .button{
+        font-size: 7rem;
+    }
+}

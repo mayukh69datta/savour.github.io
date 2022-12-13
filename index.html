@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style7.css">
+</head>
+
+<body>
+
+</body>
+
+</html>
+<link rel="stylesheet" href="style7.css">
+<script src="resp.js"></script>
+<title>iTECH</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="icons/tiger.jpg" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#delivery">Delivery</a></li>
+            <li><a href="#order">Order</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstSection">
+        <div class="box-main">
+            <h1>Are you hungry?</h1>
+            <h2>Don't wait</h2>
+            <h3>Order your favourite food now!</h3>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="sliding">
+            <img class="mySlides" src="icons/food15.jpg" style="width:100%">
+            <img class="mySlides" src="icons/food16.jpeg" style="width:100%">
+            <img class="mySlides" src="icons/food17.jpg" style="width:100%">
+            <img class="mySlides" src="icons/food18.png" style="width:100%">
+        </div>
+    </section>
+    <section class="section" id="menu">
+        <div class="flex">
+            <h1>OUR MENU</h1>
+            <div class="menu">
+                <img src="icons/food3.jpeg" alt="" class="img1">
+                <button class="button" onclick="window.open('https://www.dominos.co.in/','_self');">PIZZA</button>
+                <div class="new">
+                    <button class="number" onclick="increment7()">+</button>
+                    <h2 class="count" id="pizza counting"></h2>
+                    <button class="number" onclick="decrement7()">-</button>
+                </div>
+                <img src="icons/food4.jpeg" alt="" class="img2">
+                <button class="button" onclick="window.open('https://www.burgerking.in/','_self');">BURGER</button>
+                <div class="new">
+                    <button class="number" onclick="increment8()">+</button>
+                    <h2 class="count" id="burger counting"></h2>
+                    <button class="number" onclick="decrement8()">-</button>
+                </div>
+                <img src="icons/food5.jpeg" alt="" class="img3">
+                <button class="button" onclick="window.open('https://www.thesugarandspice.com/','_self');">CREAM
+                    ROLL</button>
+                <div class="new">
+                    <button class="number" onclick="increment9()">+</button>
+                    <h2 class="count" id="cream counting"></h2>
+                    <button class="number" onclick="decrement9()">-</button>
+                </div>
+            </div>
+            <div class="hidden">
+                <button class="button-hide" onclick="window.open('https://www.dominos.co.in/','_self');">PIZZA</button>
+                <button class="button-hide" onclick="window.open('https://www.burgerking.in/','_self');">BURGER</button>
+                <button class="button-hide" onclick="window.open('https://www.thesugarandspice.com/','_self');">CREAM
+                    ROLL</button>
+            </div>
+            <div class="goat">
+                <button class="number" onclick="increment1()">+</button>
+                <h2 class="count" id="pizza counting 1"></h2>
+                <button class="number" onclick="decrement1()">-</button>
+                <button class="number" onclick="increment2()">+</button>
+                <h2 class="count" id="burger counting 1"></h2>
+                <button class="number" onclick="decrement2()">-</button>
+                <button class="number" onclick="increment3()">+</button>
+                <h2 class="count" id="cream counting 1"></h2>
+                <button class="number" onclick="decrement3()">-</button>
+            </div>
+            <div class="menu2">
+                <img src="icons/food6.jpeg" alt="" class="img4">
+                <button class="button" onclick="window.open('https://www.behrouzbiryani.com/','_self');">BIRYANI</button>
+                <div class="new">
+                    <button class="number" onclick="increment10()">+</button>
+                    <h2 class="count" id="biryani counting"></h2>
+                    <button class="number" onclick="decrement10()">-</button>
+                </div>
+                <img src="icons/food7.jpeg" alt="" class="img5">
+                <button class="button" onclick="window.open('https://www.heritagefoods.in/','_self');">PANEER</button>
+                <div class="new">
+                    <button class="number" onclick="increment11()">+</button>
+                    <h2 class="count" id="paneer counting"></h2>
+                    <button class="number" onclick="decrement11()">-</button>
+                </div>
+                <img src="icons/food8.jpg" alt="" class="img6">
+                <button class="button" onclick="window.open('https://www.licious.in/kebabs','_self');">KABAB</button>
+                <div class="new">
+                    <button class="number" onclick="increment12()">+</button>
+                    <h2 class="count" id="kabab counting"></h2>
+                    <button class="number" onclick="decrement12()">-</button>
+                </div>
+            </div>
+            <div class="hidden">
+                <button class="button-hide" onclick="window.open('https://www.behrouzbiryani.com/','_self');">BIRYANI</button>
+                <button class="button-hide"
+                    onclick="window.open('https://www.heritagefoods.in/','_self');">PANEER</button>
+                <button class="button-hide"
+                    onclick="window.open('https://www.licious.in/kebabs','_self');">KABAB</button>
+            </div>
+            <div class="cow">
+                <button class="number" onclick="increment4()">+</button>
+                <h2 class="count" id="biryani counting 1"></h2>
+                <button class="number" onclick="decrement4()">-</button>
+                <button class="number" onclick="increment5()">+</button>
+                <h2 class="count" id="paneer counting 1"></h2>
+                <button class="number" onclick="decrement5()">-</button>
+                <button class="number" onclick="increment6()">+</button>
+                <h2 class="count" id="kabab counting 1"></h2>
+                <button class="number" onclick="decrement6()">-</button>
+            </div>
+            <div class="more">
+                <h1>AND MUCH MORE....</h1>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="fresh">
+        <div class="freshly">
+            <h1>Freshly prepared food..from the location of your choice</h1>
+        </div>
+    </section>
+    <hr>
+    <section class="deliver" id="delivery">
+        <div class="delivery">
+            <h1>Get the Fastest Delivery</h1>
+            <h2>Order Food and get Delivery in Fastest time in Town</h2>
+        </div>
+    </section>
+    <hr>
+    <section class="order">
+        <div class="order-now">
+            <h1>Order now</h1>
+            <h2>And get 40% Discount on your First Order</h2>
+        </div>
+    </section>
+    <hr>
+    <section class="t">
+        <div class="s">
+            <button class="fr" onclick="getter()">DISPLAY YOUR ITEMS</button>
+        </div>
+        <div class="po">
+            <h1>PIZZA : <h2 id="pizza-p"></h2>
+                <h2 id="pizza-p1"></h2>
+            </h1>
+            <h1>BURGER : <h2 id="burger-p"></h2>
+                <h2 id="burger-p1"></h2>
+            </h1>
+            <h1>CREAM ROLL : <h2 id="roll-p"></h2>
+                <h2 id="roll-p1"></h2>
+            </h1>
+            <h1>BIRYANI : <h2 id="biryani-p"></h2>
+                <h2 id="biryani-p1"></h2>
+            </h1>
+            <h1>PANEER : <h2 id="paneer-p"></h2>
+                <h2 id="paneer-p1"></h2>
+            </h1>
+            <h1>KABAB : <h2 id="kabab-p"></h2>
+                <h2 id="kabab-p1"></h2>
+            </h1>
+            <h1>TOTAL AMOUNT : <h2 id="total-p"></h2>
+                <h2 id="total-p1"></h2>
+            </h1>
+        </div>
+    </section>
+    <section class="form1">
+        <h1>ENTER YOUR DETAILS :</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="enter your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="enter your phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="enter your email">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="enter your address"></textarea>
+            <button class="btn btn-dark">Submit</button>
+        </div>
+    </section>
+    <section class="place-order" id="order">
+        <div class="ordering">
+            <h1>CHECKOUT HERE</h1>
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">×</div>
+                    <h1>CONGRATULATIONS....YOUR ORDER HAS BEEN PLACED</h1>
+                </div>
+            </div>
+            <button class="tui" onclick="togglePopup()">ORDER</button>
+        </div>
+    </section>
+    <footer class="background">
+        <div class="connect">
+            <h1>Connect with us</h1>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="resp.js"></script>
+</body>
+
+</html>
